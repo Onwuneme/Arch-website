@@ -13,14 +13,13 @@ export default function NavBar() {
     <header className="relative z-10">
       {/* Top Navbar */}
       <nav className="p-5 max-w-[1380px] mx-auto md:py-15 lg:px-30 flex justify-between md:justify-start gap-10 items-center">
-        {/* Logo */}
-        <Link href="/">
+        <Link href="/" >
           <Image
             src="/assets/icons/logo.svg"
             width={100}
             height={100}
             alt="Logo"
-            className=" auto"
+            className=" object-center"
           />
         </Link>
 
@@ -51,6 +50,9 @@ export default function NavBar() {
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
+           <Link href="/" onClick={() => setIsOpen(false)}>
+         home
+        </Link>
         <Link href="/portfolio" onClick={() => setIsOpen(false)}>
           Portfolio
         </Link>

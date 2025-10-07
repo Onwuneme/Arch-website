@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${Josefins.className} max-w-[1380px] mx-auto`}>
         <NavBar />
-        <PageTransition>{children}</PageTransition>
+        {children}
 
         <Footer />
       </body>
