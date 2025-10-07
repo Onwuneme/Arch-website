@@ -10,7 +10,7 @@ export default function HomePageWelcome() {
   const welcomeData = data.HomePageWelcome;
 
   return (
-    <section className="relative h-[700px] md:flex items-center flex-row-reverse justify-between gap-5 px-6 md:px-0 py-20">
+    <section className="relative  md:flex items-center flex-row-reverse justify-between gap-5 px-6 md:px-0 py-20">
      
       <div className="hidden md:block w-[400px] h-[600px] relative">
         <Image
